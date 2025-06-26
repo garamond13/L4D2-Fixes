@@ -12,7 +12,7 @@ public Plugin myinfo = {
     author = "Garamond",
     description = "",
     version = VERSION,
-    url = ""
+    url = "https://github.com/garamond13/L4D2-Fixes"
 };
 
 #define DEBUG 0

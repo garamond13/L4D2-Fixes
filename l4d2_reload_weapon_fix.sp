@@ -10,7 +10,7 @@ public Plugin myinfo = {
     author = "Garamond",
     description = "When do you get ammo from reload better match with animations",
     version = VERSION,
-    url = ""
+    url = "https://github.com/garamond13/L4D2-Fixes"
 };
 
 public void OnPluginStart()
