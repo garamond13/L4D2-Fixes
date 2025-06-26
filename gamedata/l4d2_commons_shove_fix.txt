@@ -1,0 +1,32 @@
+"Games"
+{
+	"left4dead2"
+	{
+		"Offsets"
+		{
+			"CBaseEntity::MyNextBotPointer"
+			{
+				"windows" "81"
+				"linux" "82"
+			}
+
+			"INextBot::GetBodyInterface"
+			{
+				"windows" "48"
+				"linux" "49"
+			}
+
+			"INextBot::GetLocomotionInterface"
+			{
+				"windows" "47"
+				"linux" "48"
+			}
+
+			"ZombieBotLocomotion::m_ladder"
+			{
+				"windows" "232"
+				"linux" "232"
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+"Games"
+{
+	"left4dead2"
+	{
+		"Offsets"
+		{
+			"CBasePlayer::Weapon_ShootPosition"
+			{
+				"windows" "285"
+				"linux" "286"
+			}
+		}
+	}
+}
