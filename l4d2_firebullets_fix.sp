@@ -7,12 +7,12 @@
 #pragma semicolon 1
 #pragma newdecls required
 
-#define VERSION "1.0.0"
+#define VERSION "2.0.0"
 
 public Plugin myinfo = {
     name = "L4D2 FirebulletsFix",
     author = "Garamond",
-    description = "",
+    description = "Firebullets fix meant to be used only for non versus game mods!",
     version = VERSION,
     url = "https://github.com/garamond13/L4D2-Fixes"
 };
@@ -21,8 +21,6 @@ public Plugin myinfo = {
 
 // From command "maxplayers".
 #define L4D2_MAXPLAYERS 18
-
-#define TEAM_SURVIVORS 2
 
 Handle g_weapon_shoot_position;
 float g_old_weapon_shoot_position[L4D2_MAXPLAYERS + 1][3];
@@ -46,7 +44,7 @@ public void OnClientPutInServer(int client)
 
 public Action OnPlayerRunCmd(int client, int& buttons, int& impulse, float vel[3], float angles[3], int& weapon, int& subtype, int& cmdnum, int& tickcount, int& seed, int mouse[2])
 {
-    if (!IsFakeClient(client) && IsPlayerAlive(client) && GetClientTeam(client) == TEAM_SURVIVORS) {
+    if (!IsFakeClient(client) && IsPlayerAlive(client)) {
         GetClientEyePosition(client, g_old_weapon_shoot_position[client]);
     }
     return Plugin_Continue;
